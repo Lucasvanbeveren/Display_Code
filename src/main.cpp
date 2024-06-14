@@ -91,5 +91,4 @@ void loop() {
       }
     }
   }
-  printf("helo");
 }
