@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-06-11T08:06:37.911Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="1Vc6OhUW9Wm5XwII3OT1" version="24.5.2" type="device">
+  <diagram name="Page-1" id="UvGsvI7WDLGOxSDZg6XE">
+    <mxGraphModel dx="1062" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ry9LyBkneQpmExAJehDU-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="202" y="30" width="457" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-4" target="ry9LyBkneQpmExAJehDU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-4" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410.5" y="70" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-7" value="&lt;font style=&quot;font-size: 43px;&quot;&gt;void ReadJoysticks()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="22.5" y="240" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-16" target="ry9LyBkneQpmExAJehDU-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-16" value="Joystick 1 x-&lt;span style=&quot;text-wrap: nowrap; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Joystick%20xpin%20%3D%2032%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22397%22%20y%3D%22140%22%20width%3D%22120%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;pin = 32;&lt;div&gt;Joystick 1 y-pin = 33;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Joystick 2 x-&lt;span style=&quot;text-wrap: nowrap; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Joystick%20xpin%20%3D%2032%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22397%22%20y%3D%22140%22%20width%3D%22120%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;pin = 34;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Joystick 2 y-pin = 35;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="340.5" y="150" width="233" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-22" target="ry9LyBkneQpmExAJehDU-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-22" value="&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;xValueJ1 = analogRead(xAxisPin1);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;yValueJ1 = analogRead(yAxisPin1);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;xValueJ2 = analogRead(xAxisPin2);&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;yValueJ2 = analogRead(yAxisPin2);&lt;/font&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="307" y="250" width="300" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-24" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410.5" y="360" width="93" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

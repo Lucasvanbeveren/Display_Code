@@ -1,0 +1,16 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+ 
+    "doxygen_runner.doxygen_command": "D:\\doxygen\\bin\\doxygen.exe",
+    "doxygen_runner.configuration_filenames": [
+        
+        "Doxyfile",
+        "doxygen.conf"
+    ],
+    "doxygen_runner.configuration_file_override": "C:/Users/lucas/NHL Stenden/Group - Project Robotica - Elektrotechniek/Controller/Display/Code/Display_Code_V2/Doxyfile",
+    "files.associations": {
+        "*.tcc": "cpp",
+        "memory": "cpp"
+    },
+    
+}

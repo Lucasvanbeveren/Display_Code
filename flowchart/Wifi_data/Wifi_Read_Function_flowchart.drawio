@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" modified="2024-06-11T09:21:39.125Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="SuR5clYco9omX_MZBarA" version="24.5.2" type="device">
+  <diagram name="Page-1" id="UvGsvI7WDLGOxSDZg6XE">
+    <mxGraphModel dx="956" dy="1615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ry9LyBkneQpmExAJehDU-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-40" width="390" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-93" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-4" target="ry9LyBkneQpmExAJehDU-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-4" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486.5" y="20" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-7" value="&lt;font style=&quot;font-size: 43px;&quot;&gt;void WifiRead()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-78" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486.25" y="520" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-101" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-92" target="ry9LyBkneQpmExAJehDU-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-92" target="ry9LyBkneQpmExAJehDU-78">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="160" />
+              <mxPoint x="690" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-92" value="While (Connected&amp;nbsp;&lt;div&gt;to Raspberry)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="100" width="145.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-94" target="ry9LyBkneQpmExAJehDU-92">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="290" />
+              <mxPoint x="440" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-94" target="ry9LyBkneQpmExAJehDU-100">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-94" value="If (data avalable)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="478" y="240" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-98" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="444.5" y="266" width="33.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-100" target="ry9LyBkneQpmExAJehDU-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-100" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&amp;nbsp;DataRasp = client.readStringUntil(&#39;\n&#39;);&lt;/div&gt;&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;(Wifi.h Funtion)&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="394.38" y="370" width="277.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-103" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="498.25" y="340" width="33.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-106" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-104" target="ry9LyBkneQpmExAJehDU-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-104" value="Serial.println(&quot;Recieved: &quot; + DataRasp);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="411.75" y="460" width="242" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-108" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="498.25" y="216" width="33.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-109" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600.5" y="136" width="33.5" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
