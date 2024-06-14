@@ -584,7 +584,7 @@ For detailed implementation and usage information, please refer to the source fi
 - [Serial_display.cpp](_serial_display_8cpp.html)
 
 
-<!-- This is the set_gripper_head Function -->
+<!-- This is the set_color Function -->
 @page set_color_function Set Color Function
 
 This page provides details about the function to return the gripper head and send it to the display.

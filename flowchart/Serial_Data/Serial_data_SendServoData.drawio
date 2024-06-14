@@ -1,0 +1,208 @@
+<mxfile host="app.diagrams.net" modified="2024-06-14T11:52:16.816Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="OH8mzOyTIgxSuddMhVmX" version="24.5.2" type="device">
+  <diagram name="Page-1" id="UvGsvI7WDLGOxSDZg6XE">
+    <mxGraphModel dx="1434" dy="1872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ry9LyBkneQpmExAJehDU-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="310" y="-50" width="850" height="3080" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-646" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-4" target="ry9LyBkneQpmExAJehDU-612" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-4" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="583.5" y="-10" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-7" value="&lt;font style=&quot;font-size: 43px;&quot;&gt;void SendServoData()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="129" y="270" width="471" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-909" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-612" target="ry9LyBkneQpmExAJehDU-869" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-612" value="String ID1, Voltage1, Speed1, Temprature1, Position1, Error1;&lt;div&gt;String ID2, Voltage2, Speed2, Temprature2, Position2, Error2;&lt;br&gt;&lt;/div&gt;&lt;div&gt;String ID3, Voltage3, Speed3, Temprature3, Position3, Error3;&lt;br&gt;&lt;/div&gt;&lt;div&gt;String ID4, Voltage4, Speed4, Temprature4, Position4, Error4;&lt;br&gt;&lt;/div&gt;&lt;div&gt;String ID5, Voltage5, Speed5, Temprature5, Position5, Error5;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="445" y="80" width="370" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-867" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="583.5" y="2940" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-913" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-869" target="ry9LyBkneQpmExAJehDU-871" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-869" value="&lt;div&gt;char seperator = &quot;,&quot;&#39;;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="519.75" y="210" width="220.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-911" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-871" target="ry9LyBkneQpmExAJehDU-872" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-871" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;SplitString(DataRasp, seperator)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Split String)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="477.5" y="275" width="305" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-877" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-872" target="ry9LyBkneQpmExAJehDU-873" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-914" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-872" target="ry9LyBkneQpmExAJehDU-880" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-872" value="if (ReadServo = &lt;font face=&quot;Helvetica&quot;&gt;ReadServo1&lt;/font&gt;)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="557.25" y="370" width="145.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-878" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-873" target="ry9LyBkneQpmExAJehDU-875" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-873" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; ID1 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= &quot;page31.t9.txt=\&quot;&quot; &amp;nbsp;+ strings[0] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Voltage1 &amp;nbsp; &amp;nbsp; = &quot;page31.t10.txt=\&quot;&quot; + strings[1] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Speed1 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page31.t11.txt=\&quot;&quot; + strings[2] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Temprature1 &amp;nbsp;= &quot;page31.t12.txt=\&quot;&quot; + strings[3] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Posistion1 &amp;nbsp; = &quot;page31.t13.txt=\&quot;&quot; + strings[4] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Error1 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page31.t14.txt=\&quot;&quot; + strings[5] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="753.75" y="520" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-879" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-875" target="ry9LyBkneQpmExAJehDU-876" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-875" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;PrintToDisplay(ID1&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Voltage1&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Speed1&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Temprature1&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Posistion1&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Error1&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Print_To_Dispaly)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="782.5" y="670" width="302.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-920" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-876" target="ry9LyBkneQpmExAJehDU-880" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-876" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;ReadServo = 0;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="861.87" y="820" width="143.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-886" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-880" target="ry9LyBkneQpmExAJehDU-882" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-915" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-880" target="ry9LyBkneQpmExAJehDU-888" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-880" value="if (ReadServo = &lt;font face=&quot;Helvetica&quot;&gt;ReadServo2&lt;/font&gt;)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="557.25" y="910" width="145.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-881" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-882" target="ry9LyBkneQpmExAJehDU-884" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-882" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; ID2 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= &quot;page32.t10.txt=\&quot;&quot; &amp;nbsp;+ strings[0] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Voltage2 &amp;nbsp; &amp;nbsp; = &quot;page32.t11.txt=\&quot;&quot; + strings[1] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Speed2 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page32.t12.txt=\&quot;&quot; + strings[2] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Temprature2 &amp;nbsp;= &quot;page32.t13.txt=\&quot;&quot; + strings[3] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Posistion2 &amp;nbsp; = &quot;page32.t14.txt=\&quot;&quot; + strings[4] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Error2 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page32.t15.txt=\&quot;&quot; + strings[5] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="753.74" y="1050" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-883" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-884" target="ry9LyBkneQpmExAJehDU-885" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-884" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;PrintToDisplay(ID2&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Voltage2&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Speed2&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Temprature2&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Posistion2&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Error2&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Print_To_Dispaly)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="782.49" y="1200" width="302.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-919" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-885" target="ry9LyBkneQpmExAJehDU-888" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-885" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;ReadServo = 0;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="861.86" y="1350" width="143.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-887" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-888" target="ry9LyBkneQpmExAJehDU-890" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-916" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-888" target="ry9LyBkneQpmExAJehDU-895" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-888" value="if (ReadServo = &lt;font face=&quot;Helvetica&quot;&gt;ReadServo3&lt;/font&gt;)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="557.25" y="1410" width="145.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-889" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-890" target="ry9LyBkneQpmExAJehDU-892" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-890" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; ID3 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= &quot;page33.t10.txt=\&quot;&quot; &amp;nbsp;+ strings[0] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Voltage3 &amp;nbsp; &amp;nbsp; = &quot;page33.t11.txt=\&quot;&quot; + strings[1] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Speed3 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page33.t12.txt=\&quot;&quot; + strings[2] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Temprature3 &amp;nbsp;= &quot;page33.t13.txt=\&quot;&quot; + strings[3] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Posistion3 &amp;nbsp; = &quot;page33.t14.txt=\&quot;&quot; + strings[4] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Error3 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page33.t15.txt=\&quot;&quot; + strings[5] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="753.74" y="1550" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-891" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-892" target="ry9LyBkneQpmExAJehDU-893" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-892" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;PrintToDisplay(ID3&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Voltage3&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Speed3&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Temprature3&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Posistion3&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Error3&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Print_To_Dispaly)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="782.49" y="1700" width="302.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-918" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-893" target="ry9LyBkneQpmExAJehDU-895" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-893" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;ReadServo = 0;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="861.86" y="1850" width="143.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-894" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-895" target="ry9LyBkneQpmExAJehDU-897" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-917" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-895" target="ry9LyBkneQpmExAJehDU-902" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-895" value="if (ReadServo = &lt;font face=&quot;Helvetica&quot;&gt;ReadServo4&lt;/font&gt;)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="557.25" y="1910" width="145.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-896" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-897" target="ry9LyBkneQpmExAJehDU-899" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-897" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; ID4 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= &quot;page34.t10.txt=\&quot;&quot; &amp;nbsp;+ strings[0] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Voltage4 &amp;nbsp; &amp;nbsp; = &quot;page34.t11.txt=\&quot;&quot; + strings[1] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Speed4 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page34.t12.txt=\&quot;&quot; + strings[2] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Temprature4 &amp;nbsp;= &quot;page34.t13.txt=\&quot;&quot; + strings[3] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Posistion4 &amp;nbsp; = &quot;page34.t14.txt=\&quot;&quot; + strings[4] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Error4 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page34.t15.txt=\&quot;&quot; + strings[5] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="753.74" y="2050" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-898" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-899" target="ry9LyBkneQpmExAJehDU-900" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-899" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;PrintToDisplay(ID4&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Voltage4&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Speed4&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Temprature4&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Posistion4&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Error4&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Print_To_Dispaly)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="782.49" y="2200" width="302.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-923" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-900" target="ry9LyBkneQpmExAJehDU-902" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-900" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;ReadServo = 0;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="861.86" y="2350" width="143.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-901" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-902" target="ry9LyBkneQpmExAJehDU-904" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-922" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-902" target="ry9LyBkneQpmExAJehDU-867" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-902" value="if (ReadServo = &lt;font face=&quot;Helvetica&quot;&gt;ReadServo5&lt;/font&gt;)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="557.25" y="2410" width="145.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-903" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-904" target="ry9LyBkneQpmExAJehDU-906" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-904" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; ID5 &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;= &quot;page35.t10.txt=\&quot;&quot; &amp;nbsp;+ strings[0] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Voltage5 &amp;nbsp; &amp;nbsp; = &quot;page35.t11.txt=\&quot;&quot; + strings[1] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Speed5 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page35.t12.txt=\&quot;&quot; + strings[2] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Temprature5 &amp;nbsp;= &quot;page35.t13.txt=\&quot;&quot; + strings[3] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; Posistion5 &amp;nbsp; = &quot;page35.t14.txt=\&quot;&quot; + strings[4] + &quot;\&quot;&quot;;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&amp;nbsp; &amp;nbsp; Error5 &amp;nbsp; &amp;nbsp; &amp;nbsp; = &quot;page35.t15.txt=\&quot;&quot; + strings[5] + &quot;\&quot;&quot;;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="753.74" y="2550" width="360" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-905" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-906" target="ry9LyBkneQpmExAJehDU-907" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-906" value="&lt;p style=&quot;line-height: 120%;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;PrintToDisplay(ID5&lt;span style=&quot;&quot;&gt;);&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Voltage5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Speed5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Temprature5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Posistion5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;PrintToDisplay(Error5&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;);&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 120%; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;(Serial Display/Print_To_Dispaly)&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="782.49" y="2700" width="302.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-921" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-907" target="ry9LyBkneQpmExAJehDU-867" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-907" value="&lt;div style=&quot;line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;&quot;&gt;ReadServo = 0;&lt;/div&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="861.86" y="2850" width="143.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-2" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="693.74" y="420" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-3" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="510" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-4" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="693.74" y="950" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-5" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1040" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-6" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="693.74" y="1450" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-7" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1540" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-8" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="693.74" y="1950" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-9" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2040" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-10" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="693.74" y="2450" width="36.26" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0tD0LSVbbw73hGD4JxWv-11" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2540" width="36.26" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

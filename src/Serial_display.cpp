@@ -121,19 +121,19 @@ void SendServoData(String DataRasp, int &ReadServo){
   SplitString(DataRasp, seperator);   // Function to split the string after the seperator
 
   if (ReadServo == ReadServo1){                               // If servo 1 reading
-    ID1          = "page31.t9.txt=\""  + strings[0] + "\"";   // Print ID to display
-    Voltage1     = "page31.t10.txt=\"" + strings[1] + "\"";
-    Speed1       = "page31.t11.txt=\"" + strings[2] + "\"";
-    Temprature1  = "page31.t12.txt=\"" + strings[3] + "\"";
-    Posistion1   = "page31.t13.txt=\"" + strings[4] + "\"";
-    Error1       = "page31.t14.txt=\"" + strings[5] + "\"";
+    ID1          = "page31.t9.txt=\""  + strings[0] + "\"";   // Set text to the right value
+    Voltage1     = "page31.t10.txt=\"" + strings[1] + "\"";   // Set text to the right value
+    Speed1       = "page31.t11.txt=\"" + strings[2] + "\"";   // Set text to the right value
+    Temprature1  = "page31.t12.txt=\"" + strings[3] + "\"";   // Set text to the right value
+    Posistion1   = "page31.t13.txt=\"" + strings[4] + "\"";   // Set text to the right value
+    Error1       = "page31.t14.txt=\"" + strings[5] + "\"";   // Set text to the right value
     PrintToDisplay(ID1);          // Print ID to display
     PrintToDisplay(Voltage1);     // Print voltage to display
     PrintToDisplay(Speed1);       // Print speed to display
     PrintToDisplay(Temprature1);  // Print temprature to display
     PrintToDisplay(Posistion1);   // Print posistion to display
     PrintToDisplay(Error1);       // Print error to display
-    ReadServo = 0;}
+    ReadServo = 0;}               // ReadServo to 0
   else if (ReadServo == ReadServo2){                          // If servo 2 reading
     ID2          = "page32.t10.txt=\"" + strings[0] + "\"";   // Set text to the right value
     Voltage2     = "page32.t11.txt=\"" + strings[1] + "\"";   // Set text to the right value
@@ -147,7 +147,7 @@ void SendServoData(String DataRasp, int &ReadServo){
     PrintToDisplay(Temprature2);  // Print temprature to display
     PrintToDisplay(Posistion2);   // Print posistion to display
     PrintToDisplay(Error2);       // Print error to display
-    ReadServo = 0;}
+    ReadServo = 0;}               // ReadServo to 0
   else if (ReadServo == ReadServo3){                          // If servo 3 reading
     ID3          = "page33.t10.txt=\"" + strings[0] + "\"";   // Set text to the right value
     Voltage3     = "page33.t11.txt=\"" + strings[1] + "\"";   // Set text to the right value
@@ -160,8 +160,8 @@ void SendServoData(String DataRasp, int &ReadServo){
     PrintToDisplay(Speed3);       // Print Speed to display
     PrintToDisplay(Temprature3);  // Print temprature to display
     PrintToDisplay(Posistion3);   // Print posistion to display
-    PrintToDisplay(Error3);
-    ReadServo = 0;}
+    PrintToDisplay(Error3);       // Print error to display
+    ReadServo = 0;}               // ReadServo to 0
   else if (ReadServo == ReadServo4){                          // If servo 4 reading
     ID4          = "page34.t10.txt=\"" + strings[0] + "\"";   // Set text to the right value
     Voltage4     = "page34.t11.txt=\"" + strings[1] + "\"";   // Set text to the right value
@@ -175,7 +175,7 @@ void SendServoData(String DataRasp, int &ReadServo){
     PrintToDisplay(Temprature4);  // Print temprature to display
     PrintToDisplay(Posistion4);   // Print posistion to display
     PrintToDisplay(Error4);       // Print error to display
-    ReadServo = 0;}
+    ReadServo = 0;}               // ReadServo to 0
   else if (ReadServo == ReadServo5){                          // If servo 5 reading
     ID5          = "page35.t10.txt=\"" + strings[0] + "\"";   // Set text to the right value
     Voltage5     = "page35.t11.txt=\"" + strings[1] + "\"";   // Set text to the right value
@@ -189,188 +189,215 @@ void SendServoData(String DataRasp, int &ReadServo){
     PrintToDisplay(Temprature5);  // Print temprature to display
     PrintToDisplay(Posistion5);   // Print posistion to display
     PrintToDisplay(Error5);       // Print error to display
-    ReadServo = 0;}
+    ReadServo = 0;}               // ReadServo to 0
 }
 
 int SetServoSpeed(String data_from_display) {
   // Difine variables
-  const char* DataSendSlo    = "page1.t4.txt=\"Slow\"";     
-  const char* DataSendMed    = "page1.t4.txt=\"Medium\"";   
-  const char* DataSendFas    = "page1.t4.txt=\"Fast\"";     
+  const char* DataSendSlo    = "page1.t4.txt=\"Slow\"";     // Set text to the right value
+  const char* DataSendMed    = "page1.t4.txt=\"Medium\"";   // Set text to the right value
+  const char* DataSendFas    = "page1.t4.txt=\"Fast\"";     // Set text to the right value
 
-  if (data_from_display == "SpSerSlo") {
-    PrintToDisplay(DataSendSlo);
-    return SpeedServoSlow;
+  if (data_from_display == "SpSerSlo") {                    // If display prints SpSerSlo 
+    PrintToDisplay(DataSendSlo);                            // Print Slow To display
+    return SpeedServoSlow;                                  // Returns Servo Speed Slow
 
-  } else if (data_from_display == "SpSerMed") {
-    PrintToDisplay(DataSendMed);
-    return SpeedServoMedium;
+  } else if (data_from_display == "SpSerMed") {             // If display prints SpSerMed 
+    PrintToDisplay(DataSendMed);                            // Print Medium To display
+    return SpeedServoMedium;                                // Returns Servo Speed Medium
 
-  } else if (data_from_display == "SpSerFas") {
-    PrintToDisplay(DataSendFas);
-    return SpeedServoFast;
-  } else{
-    return 0;
+  } else if (data_from_display == "SpSerFas") {             // If display prints SpSerFas
+    PrintToDisplay(DataSendFas);                            // Print Fast To display
+    return SpeedServoFast;                                  // Returns Servo Speed Fast
+
+  } else{                                                   // If nothing in this funtion is set
+    return 0;                                               // Return 0        
   }
 }
 
 int SetTranslationSpeed(String data_from_display) {
   // Difine variables
-  const char* DataSendSlo    = "page1.t5.txt=\"Slow\"";
-  const char* DataSendMed    = "page1.t5.txt=\"Medium\"";
-  const char* DataSendFas    = "page1.t5.txt=\"Fast\"";
+  const char* DataSendSlo    = "page1.t5.txt=\"Slow\"";     // Set text to the right value
+  const char* DataSendMed    = "page1.t5.txt=\"Medium\"";   // Set text to the right value
+  const char* DataSendFas    = "page1.t5.txt=\"Fast\"";     // Set text to the right value
   
-  if (data_from_display == "SpTraSlo") {
-    PrintToDisplay(DataSendSlo);
-    return SpeedTranslationSlow;
+  if (data_from_display == "SpTraSlo") {                    // If display prints SpTraSlo 
+    PrintToDisplay(DataSendSlo);                            // Print Slow To display
+    return SpeedTranslationSlow;                            // Returns Translation Speed Slow
 
-  } else if (data_from_display == "SpTraMed") {
-    PrintToDisplay(DataSendMed);
-    return SpeedTranslationMedium;
-  } else if (data_from_display == "SpTraFas") {
-    PrintToDisplay(DataSendFas);
-    return SpeedTranslationFast;
-  } else{
-    return 0;
+  } else if (data_from_display == "SpTraMed") {             // If display prints SpTraMed 
+    PrintToDisplay(DataSendMed);                            // Print Medium To display
+    return SpeedTranslationMedium;                          // Returns Translation Speed Medium
+
+  } else if (data_from_display == "SpTraFas") {             // If display prints SpTraFas 
+    PrintToDisplay(DataSendFas);                            // Print Fast To display
+    return SpeedTranslationFast;                            // Returns Translation Speed Fast
+
+  } else{                                                   // If nothing in this funtion is set
+    return 0;                                               // Return 0
   }
 }
 
 
 int SetGripperForce(String data_from_display) {
   // Difine variables
-  const char* DataSendLow1    = "page1.t6.txt=\"Low\"";
-  const char* DataSendMed1    = "page1.t6.txt=\"Medium\"";
-  const char* DataSendPow1    = "page1.t6.txt=\"Power\"";
-  const char* DataSendLow2    = "page2.t6.txt=\"Low\"";
-  const char* DataSendMed2    = "page2.t6.txt=\"Medium\"";
-  const char* DataSendPow2    = "page2.t6.txt=\"Power\"";
+  const char* DataSendLow1    = "page1.t6.txt=\"Low\"";   // Set text to the right value
+  const char* DataSendMed1    = "page1.t6.txt=\"Medium\"";// Set text to the right value
+  const char* DataSendPow1    = "page1.t6.txt=\"Power\""; // Set text to the right value
+  const char* DataSendLow2    = "page2.t6.txt=\"Low\"";   // Set text to the right value  
+  const char* DataSendMed2    = "page2.t6.txt=\"Medium\"";// Set text to the right value
+  const char* DataSendPow2    = "page2.t6.txt=\"Power\""; // Set text to the right value
 
-  if (data_from_display == "FoGrLow") {
-    PrintToDisplay(DataSendLow1);
-    PrintToDisplay(DataSendLow2);
-    return ForceGripperLow;
+  if (data_from_display == "FoGrLow") {                   // If display prints FoGrLow 
+    PrintToDisplay(DataSendLow1);                         // Print low To display
+    PrintToDisplay(DataSendLow2);                         // Print low To display
+    return ForceGripperLow;                               // Returns Gripper force low
     
-  } else if (data_from_display == "FoGrMed") {
-    PrintToDisplay(DataSendMed1);
-    PrintToDisplay(DataSendMed2);
-    return ForceGripperMedium;
+  } else if (data_from_display == "FoGrMed") {            // If display prints FoGrMed
+    PrintToDisplay(DataSendMed1);                         // Print Medium To display
+    PrintToDisplay(DataSendMed2);                         // Print Medium To display
+    return ForceGripperMedium;                            // Returns Gripper force Medium
 
-  } else if (data_from_display == "FoGrPow") {
-    PrintToDisplay(DataSendPow1);
-    PrintToDisplay(DataSendPow2);
-    return ForceGripperPower;
-  } else{
-    return 0;
-  }
+  } else if (data_from_display == "FoGrPow") {            // If display prints FoGrFas
+    PrintToDisplay(DataSendPow1);                         // Print Power To display
+    PrintToDisplay(DataSendPow2);                         // Print Power To display
+    return ForceGripperPower;                             // Returns Gripper force Power
+
+  } else{                                                 // If nothing in this funtion is set
+    return 0;                                             // Return 0
+  } 
 }
 
 
 int SetAutonome(String data_from_display){
   // Difine variables
-  const char* DataSendOn    = "page2.t2.txt=\"ON\"";
-  const char* DataSendOff   = "page2.t2.txt=\"OFF\"";
+  const char* DataSendOn    = "page2.t2.txt=\"ON\"";  // Set text to the right value
+  const char* DataSendOff   = "page2.t2.txt=\"OFF\""; // Set text to the right value
 
-  if (data_from_display == "AutOn") {
-    PrintToDisplay(DataSendOn);
-    return AutonomeOn;
-  } else if (data_from_display == "AutOff") {
-    PrintToDisplay(DataSendOff);
-    return AutonomeOff;
-  } else{
-    return 0;
+  if (data_from_display == "AutOn") {                 // If display prints AutOn
+    PrintToDisplay(DataSendOn);                       // Print On To display
+    return AutonomeOn;                                // Returns Autonome on
+
+  } else if (data_from_display == "AutOff") {         // If display prints AutOff
+    PrintToDisplay(DataSendOff);                      // Print Off To display
+    return AutonomeOff;                               // Returns Autonome off
+
+  } else{                                             // If nothing in this funtion is set  
+    return 0;                                         // Return 0
   }
   
 }
 
+
 int SetCameraLight(String data_from_display){
   // Difine variables
-  const char* DataSendOn    = "page2.t5.txt=\"ON\"";
-  const char* DataSendOff   = "page2.t5.txt=\"OFF\"";
+  const char* DataSendOn    = "page2.t5.txt=\"ON\"";  // Set text to the right value
+  const char* DataSendOff   = "page2.t5.txt=\"OFF\""; // Set text to the right value
 
-  if (data_from_display == "LigOn") {
-    PrintToDisplay(DataSendOn);
-    return CameraLightOn;
+  if (data_from_display == "LigOn") {                 // If display prints LigOn
+    PrintToDisplay(DataSendOn);                       // Print On To display
+    return CameraLightOn;                             // Returns Camera light on
     
-  } else if (data_from_display == "LigOff") {
-    PrintToDisplay(DataSendOff);
-    return CameraLightOff;
-  } else{
-    return 0;
+  } else if (data_from_display == "LigOff") {         // If display prints LifOff
+    PrintToDisplay(DataSendOff);                      // Print Off To display
+    return CameraLightOff;                            // Returns Camera Light off
+
+  } else{                                             // If nothing in this funtion is set
+    return 0;                                         // Return 0
   }
 }
+
 
 int SetRaspberryOff(String data_from_display){
-  if (data_from_display == "RaspOff") {
-    return Raspberryoff;
-  } else{
-    return 0;
+  if (data_from_display == "RaspOff") {             // If display prints RaspOff
+    return Raspberryoff;                            // Returns Raspberry off
+
+  } else{                                           // If nothing in this funtion is set
+    return 0;                                       // Return 0
   }
 }
 
+
 int SetReadServo(String data_from_display){
-  if (data_from_display == "ReadS1") {
-    return ReadServo1;
-  }else if (data_from_display == "ReadS2"){
-    return ReadServo2;
-  }else if (data_from_display == "ReadS3"){
-    return ReadServo3;
-  }else if (data_from_display == "ReadS4"){
-    return ReadServo4;
-  }else if (data_from_display == "ReadS5"){
-    return ReadServo5;
-  }else{
-    return 0;
+  if (data_from_display == "ReadS1") {            // If display prints ReadS1 
+    return ReadServo1;                            // Returns Read Servo 1
+
+  }else if (data_from_display == "ReadS2"){       // If display prints ReadS2
+    return ReadServo2;                            // Returns Read Servo 2
+
+  }else if (data_from_display == "ReadS3"){       // If display prints ReadS3
+    return ReadServo3;                            // Returns Read Servo 3
+
+  }else if (data_from_display == "ReadS4"){       // If display prints ReadS4
+    return ReadServo4;                            // Returns Read Servo 4
+
+  }else if (data_from_display == "ReadS5"){       // If display prints ReadS5
+    return ReadServo5;                            // Returns Read Servo 5
+
+  }else{                                          // If nothing in this funtion is set
+    return 0;                                     // Return 0
   }
 }
+
 
 int SetGripperHead(String data_from_display){
   // Difine variables
-  const char* DataSendCil     = "page43.t10.txt=\"Cilinder\"";
-  const char* DataSendPen     = "page43.t10.txt=\"Pen\"";
-  const char* DataSendTools   = "page43.t10.txt=\"Tools\"";
+  const char* DataSendCil     = "page43.t10.txt=\"Cilinder\"";  // Set text to the right value
+  const char* DataSendPen     = "page43.t10.txt=\"Pen\"";       // Set text to the right value
+  const char* DataSendTools   = "page43.t10.txt=\"Tools\"";     // Set text to the right value
 
-  if (data_from_display == "HeadCil") {
-    PrintToDisplay(DataSendCil);
-    return HeadCilinder;
-  }else if (data_from_display == "HeadPen"){
-    PrintToDisplay(DataSendPen);
-    return HeadPen;
-  }else if (data_from_display == "HeadTool"){
-    PrintToDisplay(DataSendTools);
-    return HeadTools;
-  }else{
-    return 0;
+  if (data_from_display == "HeadCil") {           // If display prints HeadCil
+    PrintToDisplay(DataSendCil);                  // Print Cilinder To display
+    return HeadCilinder;                          // Returns Gripper Head Cilinder
+
+  }else if (data_from_display == "HeadPen"){      // If display prints HeadPen
+    PrintToDisplay(DataSendPen);                  // Print Pen To display
+    return HeadPen;                               // Returns Gripper Head Pen
+
+  }else if (data_from_display == "HeadTool"){     // If display prints HeadTool
+    PrintToDisplay(DataSendTools);                // Print Tools To display
+    return HeadTools;                             // Returns Gripper Head Tools
+
+  }else{                                          // If nothing in this funtion is set
+    return 0;                                     // Return 0
   }
 }
 
 int SetColor(String data_from_display){
   // Difine variables
-  const char* DataSendAll       = "page43.t15.txt=\"All\"";
-  const char* DataSendSilver    = "page43.t15.txt=\"Silver\"";
-  const char* DataSendRed       = "page43.t15.txt=\"Red\"";
-  const char* DataSendGreen     = "page43.t15.txt=\"Green\"";
-  const char* DataSendBlue      = "page43.t15.txt=\"Blue\"";
-  const char* DataSendPink      = "page43.t15.txt=\"Pink\"";
-  if (data_from_display == "ColAll") {
-    PrintToDisplay(DataSendAll);
-    return All;
-  }else if (data_from_display == "ColSil") {
-    PrintToDisplay(DataSendSilver);
-    return Silver;
-  }else if (data_from_display == "ColRed"){
-    PrintToDisplay(DataSendRed);
-    return Red;
-  }else if (data_from_display == "ColGre"){
-    PrintToDisplay(DataSendGreen);
-    return Green;
-  }else if (data_from_display == "ColBlu"){
-    PrintToDisplay(DataSendBlue);
-    return Blue;
-  }else if (data_from_display == "ColPin"){
-    PrintToDisplay(DataSendPink);
-    return Pink;
-  }else{
-    return 0;
+  const char* DataSendAll       = "page43.t15.txt=\"All\"";     // Set text to the right value
+  const char* DataSendSilver    = "page43.t15.txt=\"Silver\"";  // Set text to the right value
+  const char* DataSendRed       = "page43.t15.txt=\"Red\"";     // Set text to the right value
+  const char* DataSendGreen     = "page43.t15.txt=\"Green\"";   // Set text to the right value
+  const char* DataSendBlue      = "page43.t15.txt=\"Blue\"";    // Set text to the right value
+  const char* DataSendPink      = "page43.t15.txt=\"Pink\"";    // Set text to the right value
+
+  if (data_from_display == "ColAll") {            // If display prints ColAll
+    PrintToDisplay(DataSendAll);                  // Print All To display
+    return All;                                   // Return All
+
+  }else if (data_from_display == "ColSil") {      // If display prints ColSil
+    PrintToDisplay(DataSendSilver);               // Print Silver To display
+    return Silver;                                // Return Silver
+
+  }else if (data_from_display == "ColRed"){       // If display prints ColRed
+    PrintToDisplay(DataSendRed);                  // Print Red To display
+    return Red;                                   // Return Red
+
+  }else if (data_from_display == "ColGre"){       // If display prints ColGre
+    PrintToDisplay(DataSendGreen);                // Print Green To display
+    return Green;                                 // Return Green
+
+  }else if (data_from_display == "ColBlu"){       // If display prints ColBlu
+    PrintToDisplay(DataSendBlue);                 // Print Blue To display
+    return Blue;                                  // Return BLue
+
+  }else if (data_from_display == "ColPin"){       // If display prints ColPin
+    PrintToDisplay(DataSendPink);                 // Print Pink To display
+    return Pink;                                  // Return Pink
+
+  }else{                                          // If nothing in this funtion is set
+    return 0;                                     // Return 0
   }
 }
 
@@ -381,11 +408,13 @@ void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, i
     delay(30);                        // Wait for data to be collected
 
     while (Serial.available()) {
-      data_from_display += char(Serial.read());     // Put the data in the buffer
+      data_from_display += char(Serial.read());     // Put the from display in the data_from_dispay
     }
 
     // Print the received data to the serial monitor
     Serial.println(data_from_display);
+
+    // Call funtions Made for display
     if (data_from_display == "GoPage0" ||data_from_display == "GoPage1" || data_from_display == "GoPage2" || data_from_display == "GoPage3" || data_from_display == "GoPage31" || data_from_display == "GoPage32" || data_from_display == "GoPage33" || data_from_display == "GoPage34" || data_from_display == "GoPage35" || data_from_display == "GoPage4" || data_from_display == "GoPage41" || data_from_display == "GoPage42" || data_from_display == "GoPage421" || data_from_display == "GoPage43") {
       NextPages(data_from_display, SpeedServo, SpeedTranslation, ForceGripper, Autonome, CameraLight, CurrentPage, GripperHead);
     }

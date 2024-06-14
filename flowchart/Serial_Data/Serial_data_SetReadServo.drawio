@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" modified="2024-06-14T12:17:35.835Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="hGit6Sr7lW6y6Aq4p5GH" version="24.5.2" type="device">
+  <diagram name="Page-1" id="UvGsvI7WDLGOxSDZg6XE">
+    <mxGraphModel dx="2049" dy="1103" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ry9LyBkneQpmExAJehDU-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="440" y="90" width="560" height="1550" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-646" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ry9LyBkneQpmExAJehDU-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-4" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="583.5" y="120" width="93" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-7" value="&lt;font style=&quot;font-size: 43px;&quot;&gt;int SetServoRead()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="214" y="360" width="550" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-925" target="ry9LyBkneQpmExAJehDU-928">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ry9LyBkneQpmExAJehDU-925" target="FJehmAimJe5Ns4OeuD5r-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-925" value="If (Data_From_Display&amp;nbsp;&lt;div&gt;= &quot;ReadS1&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="545" y="230" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-928" value="Return ReadServo1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="390" width="218.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-947" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="ry9LyBkneQpmExAJehDU-935" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="901.25" y="1050" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-949" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ry9LyBkneQpmExAJehDU-937" target="ry9LyBkneQpmExAJehDU-938" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-937" value="Else" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="587.5100000000001" y="1330" width="85" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-938" value="Return 0" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="570.32" y="1480" width="119.37" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-954" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="583.5" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ry9LyBkneQpmExAJehDU-955" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="704" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-9" target="FJehmAimJe5Ns4OeuD5r-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-9" target="FJehmAimJe5Ns4OeuD5r-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-9" value="If (Data_From_Display&amp;nbsp;&lt;div&gt;= &quot;ReadS2&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="450" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-10" value="Return ReadServo2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="610" width="218.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-11" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="583.5" y="610" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-12" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="704" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-14" target="FJehmAimJe5Ns4OeuD5r-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-14" target="FJehmAimJe5Ns4OeuD5r-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-14" value="If (Data_From_Display&amp;nbsp;&lt;div&gt;= &quot;ReadS3&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="670" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-15" value="Return ReadServo3" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="830" width="218.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-16" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="583.5" y="830" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-17" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="704" y="720" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-19" target="FJehmAimJe5Ns4OeuD5r-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-19" target="FJehmAimJe5Ns4OeuD5r-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-19" value="If (Data_From_Display&amp;nbsp;&lt;div&gt;= &quot;ReadS4&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="890" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-20" value="Return ReadServo4" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1050" width="218.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-21" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="583.5" y="1050" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-22" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="704" y="940" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-24" target="FJehmAimJe5Ns4OeuD5r-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJehmAimJe5Ns4OeuD5r-24" target="ry9LyBkneQpmExAJehDU-937">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-24" value="If (Data_From_Display&amp;nbsp;&lt;div&gt;= &quot;ReadS5&quot;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="1110" width="170" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-25" value="Return ReadServo5" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1270" width="218.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-26" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="583.5" y="1270" width="62.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FJehmAimJe5Ns4OeuD5r-27" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="704" y="1160" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
