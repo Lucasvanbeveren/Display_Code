@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.11.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Controller code: Serial Display</title>
+<title>Controller code: Set Color Function</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('serial_display.html',''); initResizable(true); });
+$(function(){initNavTree('set_color_function.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,32 +104,29 @@ $(function(){initNavTree('serial_display.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Serial Display</div></div>
+  <div class="headertitle"><div class="title">Set Color Function</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This page provides details about the serial display code used in the project.</p>
-<p><b>Code Overview</b></p>
-<p>The serial display code handles the initialization and updating of the serial display.</p>
-<p><b>Source Files</b></p><ul>
-<li><a href="_serial__display_8h.html">Serial_display.h</a></li>
-<li><a href="_serial__display_8cpp.html">Serial_display.cpp</a></li>
+<div class="textblock"><p>This page provides details about the function to return the gripper head and send it to the display.</p>
+<p><img src="set_color_function_flowchart.png" alt="Set Color Function Flowchart" class="inline"/></p>
+<p>The image above shows a flowchart of the Set Color function.</p>
+<p><b>Function Overview</b></p>
+<p>This function returns the gripper head and sends it to the display.</p>
+<p><b>Parameter</b></p><ul>
+<li><code>data_from_display</code>: The data of the display.</li>
 </ul>
-<p><b>Functions</b></p><ul>
-<li><a class="el" href="print_to_display_function.html">Print To Display Function</a></li>
-<li><a class="el" href="next_pages_function.html">Next Pages Function</a></li>
-<li><a class="el" href="connection_print_function.html">Connection Print Function</a></li>
-<li><a class="el" href="split_string_function.html">Split String Function</a></li>
-<li><a class="el" href="send_servo_data_function.html">Send Servo Data Function</a></li>
-<li><a class="el" href="set_servo_speed_function.html">Set Servo Speed Function</a></li>
-<li><a class="el" href="set_translation_speed_function.html">Set Translation Speed Function</a></li>
-<li><a class="el" href="set_gripper_force_function.html">Set Gripper Force Function</a></li>
-<li><a class="el" href="set_autonome_function.html">Set Autonome Function</a></li>
-<li><a class="el" href="set_camera_light_function.html">Set Camera Light Function</a></li>
-<li><a class="el" href="set_raspberry_off_function.html">Set Raspberry Off Function</a></li>
-<li><a class="el" href="set_read_servo_function.html">Set Read Servo Function</a></li>
-<li><a class="el" href="set_gripper_head_function.html">Set Gripper Head Function</a></li>
-<li><a class="el" href="set_color_function.html">Set Color Function</a></li>
-<li><a class="el" href="read_serial_data_function.html">Read Serial Data Function</a> </li>
+<p><b>Return Value</b></p><ul>
+<li><a class="el" href="group___color.html#gabad5abd77319d79a9d6bbebaed1d3a86">All</a></li>
+<li><a class="el" href="group___color.html#ga83dd455066a997b33ef319b7f6531015">Silver</a></li>
+<li><a class="el" href="group___color.html#gae8e246fd7335d7e27ab04150cbc418ba">Red</a></li>
+<li><a class="el" href="group___color.html#gaa429cd977709122166b6e31fa10903d1">Green</a></li>
+<li><a class="el" href="group___color.html#ga6208a194d702872fdbe1d3c7d7a7c879">Blue</a></li>
+<li><a class="el" href="group___color.html#ga5729db18002d801c80e8cd4b7d970a63">Pink</a></li>
+</ul>
+<p><b>Source Files</b></p>
+<p>For detailed implementation and usage information, please refer to the source files:</p><ul>
+<li><a href="_serial_display_8h.html">Serial_display.h</a></li>
+<li><a href="_serial_display_8cpp.html">Serial_display.cpp</a> </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

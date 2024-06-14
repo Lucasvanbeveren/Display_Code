@@ -13,5 +13,6 @@ var serial_display =
     [ "Set Raspberry Off Function", "set_raspberry_off_function.html", null ],
     [ "Set Read Servo Function", "set_read_servo_function.html", null ],
     [ "Set Gripper Head Function", "set_gripper_head_function.html", null ],
+    [ "Set Color Function", "set_color_function.html", null ],
     [ "Read Serial Data Function", "read_serial_data_function.html", null ]
 ];

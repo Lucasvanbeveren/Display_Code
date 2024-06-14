@@ -39,6 +39,7 @@ int CameraLight = 0;        /**< Camera light status (On 1, Off 0). */
 int RaspberryOff = 0;       /**< Indicates if the Raspberry Pi should be turned off (1). */
 int ReadServo = 0;          /**< Specifies which servo to read (Servo1 1, Servo2 2, Servo3 3, Servo4 4, Servo5 5). */
 int GripperHead = 1;        /**< Gripper head type (Cilinder 1, Pen 2, Tools 3). */
+int Color = 0;              /**< Collor type (Silver 1, Red 2, Green 3, Blue 4, Pink 5). */
 /** @} */ // end of Display group
 
 /**
@@ -71,12 +72,12 @@ void setup() {
 void loop() {
   ConnectionPrint(CurrentPage, RaspConnection);     /**< Update connection status on the display. */
   RaspConnection = WifiCheck(host, port);           /**< Check connection to the Raspberry Pi. */
-  ReadSerialData(SpeedServo, SpeedTranslation, ForceGripper, Autonome, CameraLight, RaspberryOff, CurrentPage, ReadServo, GripperHead);   /**< Read data from the display. */
-  ReadController(xValueJ1, yValueJ1, xValueJ2, yValueJ2, GripperButton, buttonPin);                                                       /**< Read joystick values and button state from the controller. */
+  ReadSerialData(SpeedServo, SpeedTranslation, ForceGripper, Autonome, CameraLight, RaspberryOff, CurrentPage, ReadServo, GripperHead, Color);    /**< Read data from the display. */
+  ReadController(xValueJ1, yValueJ1, xValueJ2, yValueJ2, GripperButton, buttonPin);                                                               /**< Read joystick values and button state from the controller. */
  
   if (RaspConnection == 1) {                        /**< If Raspberry Pi is connected. */
     // Combine values into a single string to send to the Raspberry Pi
-    dataToSend = String(SpeedServo) + "," + String(SpeedTranslation) + "," + String(ForceGripper) + "," + String(Autonome) + "," + String(CameraLight) + "," + String(xValueJ1) + "," + String(yValueJ1) + "," + String(xValueJ2) + "," + String(yValueJ2) + "," + String(RaspberryOff) + "," + String(ReadServo) + "," + String(GripperButton) + "," + String(GripperHead);
+    dataToSend = String(SpeedServo) + "," + String(SpeedTranslation) + "," + String(ForceGripper) + "," + String(Autonome) + "," + String(CameraLight) + "," + String(xValueJ1) + "," + String(yValueJ1) + "," + String(xValueJ2) + "," + String(yValueJ2) + "," + String(RaspberryOff) + "," + String(ReadServo) + "," + String(GripperButton) + "," + String(GripperHead) + "," + String(Color);
     WifiSend(dataToSend);                           /**< Send data to the Raspberry Pi. */
 
     if ((ReadServo == 1) || (ReadServo == 2) || (ReadServo == 3) || (ReadServo == 4) || (ReadServo == 5)) { /**< If a servo needs to be read. */

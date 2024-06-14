@@ -19,13 +19,14 @@ var searchData=
   ['readcontroller_16',['ReadController',['../_controller_8cpp.html#a5b7e435eedba1bbf4677a3c988c8a600',1,'ReadController(int &amp;xValueJ1, int &amp;yValueJ1, int &amp;xValueJ2, int &amp;yValueJ2, int &amp;GripperButton, const int buttonPin):&#160;Controller.cpp'],['../_controller_8h.html#a5b7e435eedba1bbf4677a3c988c8a600',1,'ReadController(int &amp;xValueJ1, int &amp;yValueJ1, int &amp;xValueJ2, int &amp;yValueJ2, int &amp;GripperButton, const int buttonPin):&#160;Controller.cpp']]],
   ['readings_17',['Servo Readings',['../group___servo_readings.html',1,'']]],
   ['readjoysticks_18',['ReadJoysticks',['../_controller_8cpp.html#a0c0006fcc512b5b191a96f342ddea809',1,'ReadJoysticks(int &amp;xValueJ1, int &amp;yValueJ1, int &amp;xValueJ2, int &amp;yValueJ2):&#160;Controller.cpp'],['../_controller_8h.html#a0c0006fcc512b5b191a96f342ddea809',1,'ReadJoysticks(int &amp;xValueJ1, int &amp;yValueJ1, int &amp;xValueJ2, int &amp;yValueJ2):&#160;Controller.cpp']]],
-  ['readserialdata_19',['ReadSerialData',['../_serial__display_8cpp.html#a4ad0d86b25582b0f76a74f1339ad4245',1,'ReadSerialData(int &amp;SpeedServo, int &amp;SpeedTranslation, int &amp;ForceGripper, int &amp;Autonome, int &amp;CameraLight, int &amp;RaspberryOff, int &amp;CurrentPage, int &amp;ReadServo, int &amp;GripperHead):&#160;Serial_display.cpp'],['../_serial__display_8h.html#af53878e0b5773465b34cd941dbb0ba27',1,'ReadSerialData(int &amp;SpeedServo, int &amp;SpeedTranslation, int &amp;ForceGripper, int &amp;Autonome, int &amp;CameraLight, int &amp;RaspberryOff, int &amp;CurrentPage, int &amp;ReadServo, int &amp;GipperHead):&#160;Serial_display.cpp']]],
+  ['readserialdata_19',['ReadSerialData',['../_serial__display_8cpp.html#a3b7547cb1e13e946c612b482d421e909',1,'ReadSerialData(int &amp;SpeedServo, int &amp;SpeedTranslation, int &amp;ForceGripper, int &amp;Autonome, int &amp;CameraLight, int &amp;RaspberryOff, int &amp;CurrentPage, int &amp;ReadServo, int &amp;GripperHead, int &amp;Color):&#160;Serial_display.cpp'],['../_serial__display_8h.html#aa00eff66f0839b17eb7f6cbcf84a6627',1,'ReadSerialData(int &amp;SpeedServo, int &amp;SpeedTranslation, int &amp;ForceGripper, int &amp;Autonome, int &amp;CameraLight, int &amp;RaspberryOff, int &amp;CurrentPage, int &amp;ReadServo, int &amp;GipperHead, int &amp;Color):&#160;Serial_display.cpp']]],
   ['readservo_20',['ReadServo',['../group___display.html#ga4a9c754db5e0e97526bd26976ecd1880',1,'main.cpp']]],
   ['readservo1_21',['ReadServo1',['../group___servo_readings.html#ga3fc4de047ff93b31fcc6df4ec6c5188d',1,'Serial_display.h']]],
   ['readservo2_22',['ReadServo2',['../group___servo_readings.html#ga49d7a57636b9063643c5c11109212c0f',1,'Serial_display.h']]],
   ['readservo3_23',['ReadServo3',['../group___servo_readings.html#gafeb3d08b078f4656cd321e85b76e0968',1,'Serial_display.h']]],
   ['readservo4_24',['ReadServo4',['../group___servo_readings.html#gae0015e16017d2aadc9245adf932147c3',1,'Serial_display.h']]],
   ['readservo5_25',['ReadServo5',['../group___servo_readings.html#ga95e1187f400befea7614e412b32163a4',1,'Serial_display.h']]],
-  ['robot_26',['S.J.O.N.N.I.E. Robot',['../index.html',1,'']]],
-  ['robot_20heads_27',['Robot Heads',['../group___robot_heads.html',1,'']]]
+  ['red_26',['Red',['../group___color.html#gae8e246fd7335d7e27ab04150cbc418ba',1,'Serial_display.h']]],
+  ['robot_27',['S.J.O.N.N.I.E. Robot',['../index.html',1,'']]],
+  ['robot_20heads_28',['Robot Heads',['../group___robot_heads.html',1,'']]]
 ];

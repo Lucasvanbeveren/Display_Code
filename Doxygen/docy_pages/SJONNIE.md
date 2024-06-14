@@ -233,6 +233,7 @@ The serial display code handles the initialization and updating of the serial di
 - @subpage set_raspberry_off_function "Set Raspberry Off Function"
 - @subpage set_read_servo_function "Set Read Servo Function"
 - @subpage set_gripper_head_function "Set Gripper Head Function"
+- @subpage set_color_function "Set Color Function"
 - @subpage read_serial_data_function "Read Serial Data Function"
 
 
@@ -584,6 +585,38 @@ For detailed implementation and usage information, please refer to the source fi
 
 
 <!-- This is the set_gripper_head Function -->
+@page set_color_function Set Color Function
+
+This page provides details about the function to return the gripper head and send it to the display.
+
+![Set Color Function Flowchart](set_color_function_flowchart.png)
+
+The image above shows a flowchart of the Set Color function.
+
+**Function Overview**
+
+This function returns the gripper head and sends it to the display.
+
+**Parameter** 
+- `data_from_display`: The data of the display.
+
+**Return Value**
+- @ref All
+- @ref Silver
+- @ref Red
+- @ref Green
+- @ref Blue
+- @ref Pink
+
+**Source Files**
+
+For detailed implementation and usage information, please refer to the source files:
+- [Serial_display.h](_serial_display_8h.html)
+- [Serial_display.cpp](_serial_display_8cpp.html)
+
+
+
+<!-- This is the read_serial_data Function -->
 @page read_serial_data_function Read Serial Data Function
 
 This page provides details about the function to read the data from the display and ensure that the correct functions are called.

@@ -10,5 +10,6 @@ var topics =
     [ "Camera Light", "group___camera_light.html", "group___camera_light" ],
     [ "Raspberry Pi Connection", "group___raspberry_pi.html", "group___raspberry_pi" ],
     [ "Servo Readings", "group___servo_readings.html", "group___servo_readings" ],
-    [ "Robot Heads", "group___robot_heads.html", "group___robot_heads" ]
+    [ "Robot Heads", "group___robot_heads.html", "group___robot_heads" ],
+    [ "Color", "group___color.html", "group___color" ]
 ];

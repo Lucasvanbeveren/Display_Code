@@ -343,10 +343,39 @@ int SetGripperHead(String data_from_display){
   }
 }
 
+int SetColor(String data_from_display){
+  // Difine variables
+  const char* DataSendAll       = "page43.t15.txt=\"All\"";
+  const char* DataSendSilver    = "page43.t15.txt=\"Silver\"";
+  const char* DataSendRed       = "page43.t15.txt=\"Red\"";
+  const char* DataSendGreen     = "page43.t15.txt=\"Green\"";
+  const char* DataSendBlue      = "page43.t15.txt=\"Blue\"";
+  const char* DataSendPink      = "page43.t15.txt=\"Pink\"";
+  if (data_from_display == "ColAll") {
+    PrintToDisplay(DataSendAll);
+    return All;
+  }else if (data_from_display == "ColSil") {
+    PrintToDisplay(DataSendSilver);
+    return Silver;
+  }else if (data_from_display == "ColRed"){
+    PrintToDisplay(DataSendRed);
+    return Red;
+  }else if (data_from_display == "ColGre"){
+    PrintToDisplay(DataSendGreen);
+    return Green;
+  }else if (data_from_display == "ColBlu"){
+    PrintToDisplay(DataSendBlue);
+    return Blue;
+  }else if (data_from_display == "ColPin"){
+    PrintToDisplay(DataSendPink);
+    return Pink;
+  }else{
+    return 0;
+  }
+}
 
 
-
-void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, int &Autonome, int &CameraLight, int &RaspberryOff, int &CurrentPage, int &ReadServo, int &GripperHead) {
+void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, int &Autonome, int &CameraLight, int &RaspberryOff, int &CurrentPage, int &ReadServo, int &GripperHead, int &Color) {
   if (Serial.available()) {
     String data_from_display = "";    // Clear data buffer
     delay(30);                        // Wait for data to be collected
@@ -383,6 +412,9 @@ void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, i
     }
     if (data_from_display == "HeadCil" || data_from_display == "HeadPen" || data_from_display == "HeadTool") {
       GripperHead = SetGripperHead(data_from_display);
+    }
+    if (data_from_display == "ColSil" || data_from_display == "ColRed" || data_from_display == "ColGre" || data_from_display == "ColBlu" || data_from_display == "ColPin" || data_from_display == "ColAll") {
+      Color = SetColor(data_from_display);
     }
   }
 }

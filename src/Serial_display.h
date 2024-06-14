@@ -121,6 +121,17 @@
 #define HeadTools               3       /**< Tools head. */
 /** @} */ // end of RobotHeads group
 
+/**
+ * @addtogroup Color
+ * @{
+ */
+#define All                 0           /**< all colors. */
+#define Silver              1           /**< Cilinder head. */
+#define Red                 2           /**< Pen head. */
+#define Green               3           /**< Tools head. */
+#define Blue                4           /**< Pen head. */
+#define Pink                5           /**< Tools head. */
+/** @} */ // end of RobotHeads group
 
 
 
@@ -261,6 +272,21 @@ int SetReadServo(String data_from_display);
 int SetGripperHead(String data_from_display);
 
 /**
+ * @brief This funtion returns the Color and sends it to the display
+ * 
+ * @param data_from_display 
+ * @return 
+ *      - @ref All
+ *      - @ref Silver
+ *      - @ref Red
+ *      - @ref Green
+ *      - @ref Blue
+ *      - @ref Pink
+ */
+int SetColor(String data_from_display);
+
+
+/**
  * @brief This function reads the data from the display and ensures that the correct functions are called.
  * 
  * @param SpeedServo            This is the current servo speed
@@ -271,8 +297,9 @@ int SetGripperHead(String data_from_display);
  * @param RaspberryOff          This is the current state of which the raspberry needs to be shut down
  * @param CurrentPage           This is the current page the display is on
  * @param ReadServo             This is the current servo who needs to be read
- * @param GipperHead            This is the current gripper head    
+ * @param GipperHead            This is the current gripper head  
+ * @param Color                 This is the current Color   
  */
-void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, int &Autonome, int &CameraLight, int &RaspberryOff, int &CurrentPage, int &ReadServo, int &GipperHead);
+void ReadSerialData(int &SpeedServo, int &SpeedTranslation, int &ForceGripper, int &Autonome, int &CameraLight, int &RaspberryOff, int &CurrentPage, int &ReadServo, int &GipperHead, int &Color);
 
 #endif // SERIAL_DISPLAY_H

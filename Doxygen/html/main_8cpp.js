@@ -5,6 +5,7 @@ var main_8cpp =
     [ "Autonome", "group___display.html#ga2201d79b7f1e48364088a1ab65e91e51", null ],
     [ "buttonPin", "group___controller.html#ga4ddb8b6ae564eb22f7c74f2683a63b8e", null ],
     [ "CameraLight", "group___display.html#gada575a49a869a8e22e6cfb96ee497e1b", null ],
+    [ "Color", "group___display.html#ga65d90b56a38d0ad64ec3b8f4f02ded3a", null ],
     [ "CurrentPage", "group___display.html#ga0bc5ae8741e4b235828624d3525dcf5e", null ],
     [ "DataRasp", "group___wi_fi.html#ga00938dca5949fae5e2c6a40207c67090", null ],
     [ "dataToSend", "group___wi_fi.html#ga087facb42c2818e1eb73390c6eb9fd49", null ],
